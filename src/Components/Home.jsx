@@ -159,7 +159,7 @@ export default function Body({
             handleMessages();
             handleApi();
           }}
-          className="bg-gray-300 p-2 px-3 rounded-xl cursor-pointer outline-none hover:bg-gradient-to-br from-green-200 to-green-400"
+          className="bg-gray-300  [@media(width<768px)]:bg-gradient-to-br [@media(width<768px)]:from-green-200 [@media(width<768px)]:to-green-400 p-2 px-3 rounded-xl cursor-pointer outline-none hover:bg-gradient-to-br from-green-200 to-green-400"
         >
           <i className="text-2xl fa-regular fa-paper-plane text-white"></i>
         </button>
