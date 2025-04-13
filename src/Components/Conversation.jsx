@@ -18,21 +18,21 @@ export default function Conversation({
   }, [messages]);
 
   function renderMessage() {
-    return messages.map((message, index) => {
-      if (message.sender === "user") {
+    return messages?.map((message, index) => {
+      if (message?.sender === "user") {
         return (
           <div
             key={index}
             className="flex flex-row items-start justify-end mr-2 "
           >
-            <div className="outgoing break-words ">{message.text}</div>
+            <div className="outgoing break-words ">{message?.text}</div>
 
             <div className="bg-blue-400 min-w-8 rounded-full ml-2 overflow-hidden">
               <img className="w-8 max-w-8 " src={user} alt="logo" />
             </div>
           </div>
         );
-      } else if (message.sender === "Ai") {
+      } else if (message?.sender === "Ai") {
         return (
           <div
             key={index}
